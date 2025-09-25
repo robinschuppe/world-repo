@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <main>
     <div>
         <?php
@@ -67,3 +68,4 @@
     });
 </script>
 </main>
+<?php get_footer(); ?>
