@@ -1,0 +1,109 @@
+
+/* Home Style !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  width:40%;
+}
+.post-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none; 
+    align-items: center;
+    gap:8px;
+}
+
+.post-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+/* .post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.3s, filter 0.3s;
+} */
+
+/* .post-card:hover .post-image img {
+    transform: scale(1.02);
+    filter: brightness(95%);
+} */
+
+/* Content inside each post card */
+.post-content {
+  border-radius: 10px;
+  background-color: #88888832;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width:100%;
+}
+
+.post-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #000; 
+}
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.post-title a:hover {
+    color: #555; 
+}
+
+.post-excerpt {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333; 
+    line-height: 1.4;
+}
+
+@media(max-width: 768px) {
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.view-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #333; 
+    background-color: #fff; 
+    color: #333; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; 
+}
+
+.view-more-btn:hover {
+    background-color: #333; 
+    color: #fff;
+    border-color: #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 600px) {
+    .view-more-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
