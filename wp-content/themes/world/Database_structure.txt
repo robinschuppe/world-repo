@@ -1,0 +1,4 @@
+id: int
+title: char
+content : char
+date : date
