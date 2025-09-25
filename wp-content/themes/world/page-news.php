@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <main>
     <a href="<?php echo get_template_directory_uri(); ?>/pageeeee.php">HELLO</a>
     <div>
@@ -68,3 +69,4 @@
     });
 </script>
 </main>
+<?php get_footer(); ?>
