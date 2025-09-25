@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.w-screen {
+    width: 100vw;
+}
+.h-screen {
+    height: 100vh;
+}
+.justify-between {
+    justify-content: space-between ;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-left {
+    justify-content: left;
+}
+.justify-right {
+    justify-content: right;
+}
+.m-auto {
+    margin: auto;
+}
+.p-auto {
+    padding: auto;
+}
+.align-center {
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
