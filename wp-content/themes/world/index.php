@@ -4,7 +4,7 @@
 
 <main>
  
-    <div class = "post-container">
+    <div class = "postContainer">
     <h2>News</h2>
     <?php
               $args = array(
@@ -17,12 +17,12 @@
 
               
             ?>
-            <div class="post-card">
+            <div class="postCard">
                 <?php if ($works->have_posts()) :
                 while ($works->have_posts()) :
                   $works->the_post();
                   ?>
-                <div class="post-content"><h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
+                <div class="postContent"><h3 class="postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
             <?php
               endwhile;
               else :
@@ -31,9 +31,9 @@
             endif;
             ?>
             </div>
-  <a href = "<?php echo home_url('/news');?>" class = "view-more-btn">view more</a>
+  <a href = "<?php echo home_url('/news');?>" class = "viewMoreBtn">view more</a>
           </div>
-<div class = "post-container">
+<div class = "postContainer">
   <h2>FAQs</h2>
   <?php
               $args = array(
@@ -46,12 +46,12 @@
 
               
             ?>
-            <div class="post-card">
+            <div class="postCard">
                 <?php if ($works->have_posts()) :
                 while ($works->have_posts()) :
                   $works->the_post();
                   ?>
-                <div class="post-content"><h3 class = "post-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
+                <div class="postContent"><h3 class = "postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
             <?php
               endwhile;
               else :
@@ -60,7 +60,7 @@
             endif;
             ?>
             </div>
-            <a href = "<?php echo home_url('/faqs');?>" class = "view-more-btn">view more</a>
+            <a href = "<?php echo home_url('/faqs');?>" class = "viewMoreBtn">view more</a>
           </div>
 </main>
 
