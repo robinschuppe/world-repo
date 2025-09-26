@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<div class="contacts-container">
+<div class="contactsContainer">
   <section class="sectionContacts">
     <h1 class="contactsTitle">Contacts</h1>
-    <form class="contacts-form" method="POST" action="">
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
+    <form class="contactsForm" method="POST" action="">
+      <div class="formGroup">
+        <label for="email">Email</label>
         <input
           type="email"
           id="email"
@@ -14,8 +14,8 @@
           placeholder="aaa@gmail.com"
           required>
       </div>
-      <div class="form-group">
-        <label for="subject" class="form-label">Subject</label>
+      <div class="formGroup">
+        <label for="subject">Subject</label>
         <input
           type="text"
           id="subject"
@@ -25,8 +25,8 @@
           required>
       </div>
 
-      <div class="form-group">
-        <label for="content" class="form-label">Contents</label>
+      <div class="formGroup">
+        <label for="content" >Contents</label>
         <textarea
           id="content"
           name="content"
@@ -36,13 +36,13 @@
           cols="10"
           required></textarea>
       </div>
-      <div class="btn-group">
-        <button type="submit" class="contact-submit-btn">Submit</button>
+      <div class="btnGroup">
+        <button type="submit">Submit</button>
       </div>
     </form>
   </section>
   <section>
-    <button class="back-button">
+    <button class="backButton">
     <a href="<?php echo home_url('/') ?>">back</a>
   </button>
   </section>

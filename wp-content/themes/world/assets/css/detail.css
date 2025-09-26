@@ -11,7 +11,7 @@
   user-select: none;
 }
 
-.single-container {
+.singleContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -39,17 +39,16 @@
 .detailTitle {
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
 }
 
-.single-label {
+.singleLabel {
   display: block;
   font-weight: 600;
   font-size: 20px;
   margin-left: 8px;
 }
 
-.detail-content {
+.detailContent {
   background-color: #fff;
   border: 1px solid var(--etc);
   border-radius: 8px;
@@ -70,17 +69,17 @@ input {
   border-radius: 8px;
 }
 
-.back-button {
+.backButton {
   position: absolute;
   top: 24px;
   left: 24px;
 }
 
-.back-button a:hover {
+.backButton a:hover {
   color: rgb(28, 1, 14);
   outline: none;
 }
-.back-button a {
+.backButton a {
   text-decoration: none;
   display: flex;
   justify-content: center;

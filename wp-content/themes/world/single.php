@@ -1,19 +1,19 @@
 <?php get_header(); ?>
 
-<div class="single-container">
+<div class="singleContainer">
   <section class="sectionDetail">
-    <div class="detail-title">
-      <p class="single-label">Title</p>
-      <input type="text" id="detail-title" name="detailTitle" value="<?php the_title();?>" />
+    <div class="detailTitles">
+      <p class="singleLabel">Title</p>
+      <input type="text" name="detailTitle" value="<?php the_title();?>" />
     </div>
-    <div class="detail-description">
-      <p class="single-label">Description</p>
-      <div class="detail-content">
+    <div class="detailDescription">
+      <p class="singleLabel">Description</p>
+      <div class="detailContent">
         <?php the_content();?>
       </div>
     </div>
   </section>
-  <button class="back-button">
+  <button class="backButton">
     <a href="<?php echo home_url('/') ?>">back</a>
   </button>
 </div>

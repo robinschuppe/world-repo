@@ -11,7 +11,7 @@
   user-select: none;
 }
 
-.contacts-container {
+.contactsContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -42,14 +42,14 @@
   text-align: center;
 }
 
-.contacts-form {
+.contactsForm {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.form-group label {
+.formGroup label {
   display: block;
   font-weight: 600;
   font-size: 20px;
@@ -66,7 +66,7 @@ input {
   border-radius: 8px;
 }
 
-.form-group input, .form-group textarea {
+.formGroup input, .formGroup textarea {
   margin-top: 8px;
 }
 
@@ -77,11 +77,11 @@ textarea {
   outline: none;
 }
 
-.btn-group {
+.btnGroup {
   width: 100%;
 }
 
-.btn-group button {
+.btnGroup button {
   width: 100%;
   font-size: 20px;
   padding: 8px 0px;
