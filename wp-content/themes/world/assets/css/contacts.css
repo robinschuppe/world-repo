@@ -11,73 +11,93 @@
   user-select: none;
 }
 
-.contactsContainer {
+.contacts-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 170px);
+  padding-block: 24px;
+}
+
+.sectionContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
   max-width: 640px;
+  width: 100%;
+  max-height: 100%;
   margin: 0 auto;
   background-color: #d7d1d1;
   border-radius: 12px;
   padding: 24px;
-}
-
-.form-group {
-  padding-block: 10px;
+  overflow-y: auto;
 }
 
 .contactsTitle {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.contacts-form label {
+.contacts-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group label {
   display: block;
   font-weight: 600;
-  border-radius: 8px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-left: 8px;
 }
 
-input, textarea {
+input {
   width: 100%;
+  height: 60px;
   border: 1px solid var(--etc);
   padding: 16px 8px;
   outline: none;
-  margin-top: 8px;
   font-size: 20px;
   border-radius: 8px;
-
 }
 
-.contact-submit-btn {
-  background: var(--secondary);
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 8px;
+.form-group input, .form-group textarea {
+  margin-top: 8px;
 }
 
-.contact-submit-btn {
+textarea {
   width: 100%;
+  font-size: 20px;
+  padding: 16px 8px;
   outline: none;
-  border: none;
-  cursor: pointer;
-  color: #000;
-  font-size: 24px;
-}
-
-.contact-submit-btn:hover {
-  filter: brightness(1.05);
-  background: var(--etc); 
 }
 
 .btn-group {
   width: 100%;
 }
 
-.back-button a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  padding: 8px;
-  font-size: 16px;
+.btn-group button {
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .sectionContacts {
+    width: 70%;
+    transition: width 0.3s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionContacts {
+    width: 60%;
+    transition: width 0.3s;
+  }
 }
