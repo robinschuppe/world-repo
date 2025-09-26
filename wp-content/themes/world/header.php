@@ -6,11 +6,10 @@
 <title>Attractive Modern Header & Footer</title>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/styleBinLayout.css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/index.css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/faqs.css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/index.css" /> 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/contacts.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/detail.css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/faqs.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/faq.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/new.css">
 
 <?php wp_head();?>

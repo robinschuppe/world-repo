@@ -41,11 +41,6 @@
       </div>
     </form>
   </section>
-  <section>
-    <button class="backButton">
-    <a href="<?php echo home_url('/') ?>">back</a>
-  </button>
-  </section>
 </div>
 
 <?php get_footer(); ?>

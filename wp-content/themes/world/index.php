@@ -1,10 +1,8 @@
 
 <?php get_header();?>
 
-
 <main>
- 
-    <div class = "postContainer">
+     <div class = "postContainer">
     <h2>News</h2>
     <?php
               $args = array(
@@ -21,8 +19,8 @@
                 <?php if ($works->have_posts()) :
                 while ($works->have_posts()) :
                   $works->the_post();
-                  ?>
-                <div class="postContent"><h3 class="postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
+                ?>
+                <div class="postContent"><b class="postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></b></div>
             <?php
               endwhile;
               else :
@@ -31,7 +29,7 @@
             endif;
             ?>
             </div>
-  <a href = "<?php echo home_url('/news');?>" class = "viewMoreBtn">view more</a>
+              <a href = "<?php echo home_url('/new');?>" class = "viewMoreBtn">view more</a>
           </div>
 <div class = "postContainer">
   <h2>FAQs</h2>
@@ -51,7 +49,7 @@
                 while ($works->have_posts()) :
                   $works->the_post();
                   ?>
-                <div class="postContent"><h3 class = "postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3></div>
+                <div class="postContent"><b class = "postTitle"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></b></div>
             <?php
               endwhile;
               else :
@@ -60,7 +58,7 @@
             endif;
             ?>
             </div>
-            <a href = "<?php echo home_url('/faqs');?>" class = "viewMoreBtn">view more</a>
+            <a href = "<?php echo home_url('/faq');?>" class = "viewMoreBtn">view more</a>
           </div>
 </main>
 

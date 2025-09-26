@@ -1,12 +1,34 @@
 
 /* Home Style !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+a{
+    text-decoration: none;
+    color : black;
+}
 .postContainer {
   display: flex;
   flex-direction: column;
   gap:16px;
   width:40%;
 }
+  @media screen and (max-width: 1024px) {
+.postContainer {
+    width:60%;
+     display: flex;
+  flex-direction: column;
+  gap:16px;
+  width:40%;
+}
+  }
+
+   @media screen and (max-width: 768px) {
+.postContainer {
+    width:60%;
+     display: flex;
+  flex-direction: column;
+  gap:16px;
+  width:80%;
+}
+  }
 .postCard {
     border-radius: 8px;
     display: flex;
@@ -17,24 +39,13 @@
     gap:8px;
 }
 
+
 .postContent:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 }
 
-/* .post-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 1px solid #eee;
-    transition: transform 0.3s, filter 0.3s;
-} */
-
-/* .post-card:hover .post-image img {
-    transform: scale(1.02);
-    filter: brightness(95%);
-} */
 
 /* Content inside each post card */
 .postContent {
@@ -46,68 +57,6 @@
     flex-grow: 1;
     width:100%;
 }
-/* 
-.post-title a:hover {
-    color: #555; 
-}
-
-.post-excerpt {
-    font-family: 'Arial', sans-serif;
-    font-size: 1em;
-    color: #333; 
-    line-height: 1.4;
-}
-
-@media(max-width: 768px) {
-    .posts-container {
-        grid-template-columns: 1fr;
-    }
-} */
-/* 
-.view-more-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1em;
-    font-family: 'Arial', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    border: 2px solid #333; 
-    background-color: #fff; 
-    color: #333; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin: 20px auto;
-    display: block; 
-}
-
-.view-more-btn:hover {
-    background-color: #333; 
-    color: #fff;
-    border-color: #000;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-@media(max-width: 600px) {
-    .view-more-btn {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
-} */
-
-
-/* ----------add---------- */
-
-.postTitle:hover {
-    background: linear-gradient(90deg, #f2f2f2, #ffffff);
-    transform: translateY(-2px);
-}
-
-.postTitle:active {
-    background: linear-gradient(90deg, #ffffff, #f2f2f2);
-    transform: translateY(1px);
-}
 
 @keyframes gradientItem {
     0% { background-position: 0% 50%; }
@@ -116,17 +65,7 @@
 }
 
 
-.postTitle {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #000; 
-}
 
-.postTitle a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-}
 
 /* ---------add--------- */
 .viewMoreBtn {
@@ -154,7 +93,7 @@
 }
 
 @keyframes gradientBtn {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    0% { background-position: 0% 50%; }
 }

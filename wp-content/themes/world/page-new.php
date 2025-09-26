@@ -70,9 +70,4 @@
     </div>
 </main>
 
-<button id="toTopBtn" aria-label="Scroll to top">↑</button>
-
-<!-- To-Top Button -->
-<!-- <script src= "<?php echo get_template_directory_uri(); ?>/assets/js/index.js"> -->
-<!-- 
-  // Dark mode toggle -->
+  <?php get_footer(); ?>

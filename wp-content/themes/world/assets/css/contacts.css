@@ -1,8 +1,8 @@
 :root {
   --primary: #ffffff;
-  --secondary: #f2f2f2;
+  --secondary: #f6f6f6;
   --etc: #808080;
-  --fontcolor: #000000
+  --fontcolor: #000000;
 }
 
 * {
@@ -30,7 +30,7 @@
   width: 100%;
   max-height: 100%;
   margin: 0 auto;
-  background-color: #d7d1d1;
+  background-color: #f6f6f6;
   border-radius: 12px;
   padding: 24px;
   overflow-y: auto;
@@ -66,7 +66,8 @@ input {
   border-radius: 8px;
 }
 
-.formGroup input, .formGroup textarea {
+.formGroup input,
+.formGroup textarea {
   margin-top: 8px;
 }
 
@@ -87,7 +88,7 @@ textarea {
   padding: 8px 0px;
   cursor: pointer;
 }
-
+ 
 @media only screen and (max-width: 900px) {
   .sectionContacts {
     width: 70%;

@@ -12,41 +12,19 @@
         <?php the_content();?>
       </div>
     </div>
-  </section>
-  <button class="backButton">
-    <a href="<?php echo home_url('/') ?>">back</a>
+    <button class="backButton">
+    <a href="<?php echo home_url('/') ?>"><span></span>Back</a>
   </button>
+  </section>
+  <!-- <section>
+    <button class="backButton">
+    <a href="<?php echo home_url('/') ?>"><span></span>Back</a>
+  </button>
+  </section> -->
 </div>
 
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <?php get_header(); ?>
-<div class="single-container">
-  <section class="sectionDetail">
-    <div class="detail-form">
-      <label for="detailTitle">Title</label>
-      <input type="text" id="detail-title" name="detail_title" value="<?php the_title();?>" />
-      <label for="detail-description">Description</label>
-      <?php the_content();?>
-    </div>
-  </section>
-  <button class="back-button">
-    <a href="<?php echo home_url('/') ?>">back</a>
-  </button>
-</div>
-
-<?php get_footer(); ?> -->
+ 
 
 
 
