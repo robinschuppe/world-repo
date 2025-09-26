@@ -46,19 +46,7 @@
     flex-grow: 1;
     width:100%;
 }
-
-.post-title {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #000; 
-}
-
-.post-title a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-}
-
+/* 
 .post-title a:hover {
     color: #555; 
 }
@@ -74,8 +62,8 @@
     .posts-container {
         grid-template-columns: 1fr;
     }
-}
-
+} */
+/* 
 .view-more-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -106,4 +94,67 @@
         padding: 10px 20px;
         font-size: 0.9em;
     }
+} */
+
+
+/* ----------add---------- */
+
+.post-title:hover {
+    background: linear-gradient(90deg, #f2f2f2, #ffffff);
+    transform: translateY(-2px);
+}
+
+.post-title:active {
+    background: linear-gradient(90deg, #ffffff, #f2f2f2);
+    transform: translateY(1px);
+}
+
+@keyframes gradientItem {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.post-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #000; 
+}
+
+.post-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* ---------add--------- */
+.view-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(270deg, #f2f2f2, #fff, #f2f2f2);
+    background-size: 400% 400%;
+    animation: gradientBtn 8s ease infinite;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.view-more-btn:hover {
+    background: linear-gradient(90deg, #808080, #ffffff);
+    transform: translateY(-2px);
+}
+
+.view-more-btn:active {
+    background: linear-gradient(90deg, #ffffff, #808080);
+    transform: translateY(1px);
+}
+
+@keyframes gradientBtn {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
