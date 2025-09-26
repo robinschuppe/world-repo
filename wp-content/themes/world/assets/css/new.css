@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.page-numbers {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.page-numbers:hover {
+    background-color: gray;
+    color: white;
+}
+
+.prev:hover {
+    color: white;
+    background-color: gray;
+}
+
+.next:hover {
+    color: white;
+    background-color: gray;
+}
+
+.current {
+    background-color: gray;
+    color: white;
+}
+
+.prev {
+    display: block !important;
+    color: white;
+    background-color: #c5c5c5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.next {
+    display: block !important;
+    color: white;
+    background-color: gray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.myul {
+    list-style-type: circle;
+    margin: 0;
+    width: 70%;
+    text-align: left;
+    min-height: 400px;
+}
+
+.myul a {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: -1px;
+    margin: 10px;
+    background-color: #f6f6f6;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+
+.myul a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.content {
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+}
