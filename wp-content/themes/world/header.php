@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/faqs.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/contacts.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/detail.css" />
- 
+<?php wp_head();?>
 </head>
 <body>
 
@@ -26,8 +26,8 @@
   </div>
   <nav id="nav">
     <a href="<?php echo home_url('/');?>">Home</a>
-    <a href="<?php echo home_url('/news');?>">News</a>
-    <a href="<?php echo home_url('/faqs');?>">FAQs</a>
+    <a href="<?php echo home_url('/new');?>">News</a>
+    <a href="<?php echo home_url('/faq');?>">FAQs</a>
     <a href="<?php echo home_url('/contacts');?>">Contacts</a>
   </nav>
 </header>
